@@ -1,0 +1,5 @@
+
+p == &i; //true.
+*p - *q; //-2
+**&p; //3 obs.: *& tem uma relação inversa
+3 - *p/(*p) + 7; //10

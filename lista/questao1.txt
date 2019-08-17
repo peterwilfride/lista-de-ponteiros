@@ -1,0 +1,1 @@
+A utilidade é que podemos ter um melhor controle e gerenciamento da memória quando estamos aplicando em um projeto. O uso de ponteiros pode evitar problemas futuros.
