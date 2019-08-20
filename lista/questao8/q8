@@ -1,0 +1,6 @@
+p = mat + 1; // espressão válida, faz com que o ponteiro receba o endereço de memoria que esta 4 bits a frente do endereço de mat. 
+p = mat++;  // espressão invalida, mat++ é o mesmo que usar mat=mat+1; esse tipo de espressão muda o endereço de memoria de mat
+o que não é permitido.
+p = ++mat; // espressão invalida, mesmo motivo da espressão anterior.
+x = (*mat)++; // espressão válida, incrementa o valor do conteudo de mat em uma unidade.
+
