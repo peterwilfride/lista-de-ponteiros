@@ -1,0 +1,83 @@
+
+
+int main() {
+  int    valor;
+  int   *p1;
+  float  temp;
+  float *p2;
+  char   aux;
+  char  *nome = "Ponteiros";
+  char  *p3;
+  int    idade;
+  int    vetor[3];
+  int   *p4;
+  int   *p5;
+
+  /* (a) */
+  valor = 10;
+  p1 = &valor; //p1 guarda o endereço de valor
+  *p1 = 20; //guardar no endereço de p1 é o mesmo que guardar no endereço de valor
+  printf("%d \n", valor); //saída = 20
+
+  /* (b) */
+  temp = 26.5; 
+  p2 = &temp; //p2 guarda o endereço de temp
+  *p2 = 29.0; //guardar no endereço de p1 é o mesmo que guardar no endereço de valor
+  printf("%.1f \n", temp); //saída = 29.0
+
+  /* (c) */
+  p3 = &nome[0]; //p3 recebe o endereço do primeiro elemento de um vetor de caracteres, ou seja, uma string
+  aux = *p3; //aux recebe o endereço de p3
+  printf("%c \n", aux); //saída = P
+
+  /* (d) */
+  p3 = &nome[4]; //mesmo que o item anterior
+  aux = *p3;
+  printf("%c \n", aux); //saída = e
+
+  /* (e) */
+  p3 = nome; //p3 recebe o endereço de "nome", como nome já é um endereço, não há necessidade de &
+  printf("%c \n", *p3); //o endereço de p3 é a primeira do posição do vetor de caracteres "nome", ao imprimir o caractere da dessa posição a saída é P
+
+  /* (f) */
+  p3 = p3 + 4; //p3 possui o endereço do vetor "nome". É como se pegasse a posição inicial desse vetor e andasse 4 posiçoes 
+  printf("%c \n", *p3); recupera o valor e imprime o caractere na, logo, saída é e.
+
+  /* (g) */
+  p3--; //p3 = p3 - 1
+  printf("%c \n", *p3); //partindo do código anterior, imprime a posição anterior. Saída = t
+
+  /* (h) */
+  vetor[0] = 31;
+  vetor[1] = 45;
+  vetor[2] = 27;
+  p4 = vetor; //p4 é um ponteiro, portanto recebe o endereço da posição inicial de vetor
+  idade = *p4; //idade recebe o endereço de p4, portanto recebe vetor[0]
+  printf("%d \n", idade); //Saída = 31
+
+  /* (i) */
+  p5 = p4 + 1; //p5 é um ponteiro e recebe o endereço atual de p4, que é vetor[0] e caminha uma posição, logo p5 é o endereço de vetor[1]
+  idade = *p5; //variável inteira idade recupera o valor de p5
+  printf("%d \n", idade); //Saída = 45
+
+  /* (j) */
+  p4 = p5 + 1; //p4 pega o endereço de p5 e caminha uma posição
+  idade = *p4; // recupera o valor de p4
+  printf("%d \n", idade); //Saída = 27
+
+  /* (l) */
+  p4 = p4 - 2; //p4 recebe seu endereço atual mais 2 posições para trás
+  idade = *p4; //recupera o valor de p4
+  printf("%d \n", idade); //Saída = 31
+
+  /* (m) */
+  p5 = &vetor[2] - 1; //passa para a variável p5 o endereço de vetor[2] menos 1 posição
+  printf("%d \n", *p5); //Saída = 45
+
+  /* (n) */
+  p5++; // incrementa uma posição ao endereço de p5
+  printf("%d \n", *p5); //Saída = 27
+  return(0);
+}
+
+
