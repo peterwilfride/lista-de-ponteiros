@@ -1,0 +1,22 @@
+O que fazem os seguintes programas em C?
+
+int main(){
+  int vet[] = {4,9,13};
+  int i;
+  for(i=0;i<3;i++){
+    printf("%d ",*(vet+i));
+  }
+}
+
+//O programa acima imprime na tela os valores armazenados no vetor de inteiros "vet", com 1 espaço entre cada valor. *(vet+i) é equivalente a vetor[i].
+
+int main(){
+  int vet[] = {4,9,13};
+  int i;
+  for(i=0;i<3;i++){
+    printf("%X ",vet+i);
+  }
+}
+
+//O programa acima imprime os endereços de memória de cada elemento do vetor de inteiros "vet" em maiúsculo, com um espaço entre cada endereço.
+
