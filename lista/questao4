@@ -1,0 +1,5 @@
+expressões invalidas
+
+i = (*&)j; // o '&' é usado para pegar o endereço de memoria de uma variavel, já o '*'  é usado para pegar a conteudo
+de um endereço de memoria. Ao usar a expressão'*&' está-se tentando pegar o conteudo de um operador e isso torna a 
+expressão invalida.

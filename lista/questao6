@@ -1,0 +1,6 @@
+O programa compara duas formas de acessar um ventor.
+uma por meio do [] e a outra usando um ponteiro.
+E para provar que as duas formas de acessar são equivalentes 
+se compara o conteudo encontrado em cada posição do vetor 
+alem de compara o endereço de memoria para cada posição.
+
