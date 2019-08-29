@@ -1,0 +1,21 @@
+medindo o tempo para ordenar 10000 elementos para ordenar
+
+algoritmo da questão 14
+
+0.794636 segs
+0.800498 segs
+0.795700 segs
+
+algoritmo da questão 15 (qsort)
+0.006555 segs
+0.005021 segs
+0.006217 segs
+
+calculando o tempo médio de execução de cada um dos algoritmos, temos:
+
+algoritmo da questão 14: 0.796945 segs
+algoritmo da questão 15 (qsort) : 0.005931 segs
+
+pode se notar o quão mais rápido e eficiente é o algoritmo qsort.
+
+
